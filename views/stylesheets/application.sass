@@ -1,0 +1,36 @@
+@import blueprint/reset
+@import blueprint
+
+@import compass/utilities
+
++blueprint
+
+!aqua = #7aa6b9
+!green = #7bbaad
+!blue = #7b88ba
+!off_white = #EFEFEF
+
+body
+  :background-color = !aqua
+  :margin 0
+  :padding 0
+
+a
+  +link-colors(!blue, !blue, !blue, !blue)
+  :text-decoration none
+  :border-bottom 1px dotted
+    :color = !blue
+
+#container
+  +container
+  :background-color = !off_white
+
+#header, #content, #footer
+  +column(!blueprint_grid_columns)
+
+#main-menu
+  ul
+    +horizontal-list
+    
+#footer
+  :text-align center
