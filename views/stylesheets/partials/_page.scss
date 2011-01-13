@@ -1,0 +1,31 @@
+@import "compass/css3";
+
+// Add the 'required' attribute on your
+// inputs if you want to use these
+input:valid, textarea:valid {}
+input:invalid, textarea:invalid {
+  @include border-radius(1px);
+  @include box-shadow(red, 0, 0, 5px, 0);
+}
+.no-boxshadow input:invalid,
+.no-boxshadow textarea:invalid { background-color: #f0dddd; }
+
+
+//-----------------------------------
+// Add your own custom styles below
+//-----------------------------------
+
+@include blueprint-typography;
+
+body {
+}
+
+#container {
+  @include container;
+}
+
+header {}
+
+#main {}
+
+footer {}

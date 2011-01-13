@@ -16,3 +16,4 @@ http_path = "/"
 http_images_path = "/images"
 http_stylesheets_path = "/stylesheets"
 output_style = :expanded #compressed #nested #compact
+sass_options = {:syntax  => :scss}
